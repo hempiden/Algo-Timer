@@ -20,7 +20,9 @@ function updateCountDown() {
   countDownEl.innerHTML = `${minute} : ${seconds}`;
   time--;
 
-  localStorage.set("");
+  if (time <= 0) {
+    stop();
+  }
 }
 
 function hideBtn() {
@@ -52,7 +54,7 @@ tenMinutesBtn.addEventListener("click", () => {
 });
 
 fiveMinutesBtn.addEventListener("click", () => {
-  startingMinutes = 5;
+  startingMinutes = 1;
   time = startingMinutes * 60;
   t = setInterval(updateCountDown, 1000);
   hideBtn();
