@@ -54,7 +54,7 @@ tenMinutesBtn.addEventListener("click", () => {
 });
 
 fiveMinutesBtn.addEventListener("click", () => {
-  startingMinutes = 1;
+  startingMinutes = 5;
   time = startingMinutes * 60;
   t = setInterval(updateCountDown, 1000);
   hideBtn();

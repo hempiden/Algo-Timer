@@ -5,5 +5,9 @@
     "action": {
         "default_popup": "index.html",
         "default_icon": "logo-algo-RGB-short-white.png"
-    }
+    },
+    
+    "permissions": [
+        "tabs"
+      ]
 }

@@ -7,10 +7,24 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    background-color: #8b2fb9;
     color: white;
+    background-color: #e4dacb;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    min-width: 400px;
+    background: linear-gradient(0.90turn, #e66465, #9198e5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
 header {
     display: flex;
     align-items: center;
